@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+
+	<body>
+		<form action = "/login/" method = "POST">
+		{% csrf_token %}
+			<div>
+				<label for = "name">Username</label>
+				<input id = "name" type = "text" name = "username">
+			</div>
+
+			<div>
+				<label for = "mdp">Password</label>
+				<input id = "mdp" type = "text" name = "password">
+			</div>
+
+			<div>
+				<input type = "submit" value = "Send">
+			</div>
+		</form>
+
+		<a href = "/create/">
+			<p>Create account</p>
+		</a>
+	</body>
+</html>

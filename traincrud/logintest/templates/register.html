@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Register</title>
+	</head>
+
+	<body>
+		<form action = "/add_acc/" method = "post">
+		{% csrf_token %}
+			<div>
+				<label for = "name">Username</label>
+				<input id = "name" type = "text" name = "username">
+			</div>
+
+			<div>
+				<label for = "mdp">Password</label>
+				<input id = "mdp" type = "text" name = "password">
+			</div>
+
+			<div>
+				<label for = "information">Info</label>
+				<input id = "information" type = "text" name = "info">
+			</div>
+
+			<div>
+				<input type = "submit" value = "Send">
+			</div>
+		</form>
+	</body>
+</html>
